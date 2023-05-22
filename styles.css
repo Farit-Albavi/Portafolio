@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    color: white;
+    background-color: #212A3E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-active {
+    color: red;
+}
+
+.col {
+    margin-left: 5%;
+}
+
+#btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #212A3E;
+    color: white;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0px;
+}
+
+nav li {
+    padding-bottom: 40px;
+}
+
+ul a {
+    color: #F1F6F9;
+    text-decoration: none;
+}
+
+.container-personalziado {
+    width: 100%;
+    background-color: #212A3E;
+    color: #F1F6F9;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+}
+
+#me {
+    margin-top: 80px;
+}
+
+#me,
+#aboutme,
+#habilidades,
+#educacion,
+#contacto {
+    height: 100vh;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+.redes {
+    margin-left: -5%;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-circle {
+    background-color: #394867;
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.social-circle img {
+    width: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a:hover {
+    color: #9BA4B5;
+}
+
+.card-content {
+    width: 80%;
+}
