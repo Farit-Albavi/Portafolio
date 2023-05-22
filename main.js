@@ -47,3 +47,9 @@ window.addEventListener("scroll", function () {
         btnTop.style.opacity = "0";
     }, 800);
 });
+
+const sendmail = document.getElementById("sendmail");
+
+sendmail.addEventListener('submit', (e) => {
+    e.preventDefault();
+})

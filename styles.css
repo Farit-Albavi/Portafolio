@@ -7,6 +7,9 @@
 nav {
     color: white;
     background-color: #212A3E;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     z-index: 1;
 }
 
@@ -69,12 +72,6 @@ ul a {
     margin-top: 40px;
 }
 
-#me,
-#aboutme,
-#habilidades,
-#educacion {
-    height: 100vh;
-}
 
 #logoimg {
     max-width: 90%;
@@ -113,4 +110,29 @@ a:hover {
 
 .card-content {
     width: 80%;
+}
+
+#form-contact {
+    padding: 30px;
+}
+
+#me {
+    height: 100vh;
+}
+
+#aboutme,
+#me,
+#aboutme,
+#habilidades,
+#educacion {
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #aboutme,
+    #habilidades,
+    #educacion {
+        height: 100vh;
+    }
 }
