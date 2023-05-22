@@ -7,14 +7,17 @@
 nav {
     color: white;
     background-color: #212A3E;
-    position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1;
 }
 
 .nav-active {
     color: red;
+}
+
+.codelink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #btnTop {
