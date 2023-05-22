@@ -69,7 +69,9 @@
             <section>
                 <div id="me" class="row d-flex justify-content-center align-items-center">
                     <div class="col">
-                        <img id="logoimg" src="img/f.png" alt="logo">
+                        <div style="display: flex; justify-content: center;">
+                            <img id="logoimg" src="img/f.png" alt="logo" style="text-align: center;">
+                        </div>
                         <h1>Farit Albavi</h1>
                         <h2>Desarollador de software</h2>
                         <p>Bienvenidos/as a mi portafolio, soy desarollador trainee, he trabajado con diversas
@@ -79,9 +81,12 @@
                             tanto en el frontend como del backend. Estoy abierto a aprender, a superar desafíos y nuevos
                             retos.
                         </p>
-                        <a href="resources/FaritAlbaviCV.pdf" download>
-                            <button class="btn btn-primary">Descargar currículum</button>
-                        </a>
+
+                        <div style="display: flex; justify-content: center;">
+                            <a href="resources/FaritAlbaviCV.pdf" download>
+                                <button class="btn btn-primary">Descargar currículum</button>
+                            </a>
+                        </div>
                         <div class="redes d-flex">
                             <a target="_blank" href="https://www.linkedin.com/in/farit-albavi/">
                                 <div class="social-circle">
@@ -142,8 +147,8 @@
             <hr>
             <section>
                 <div id="portfolio" class="row d-flex justify-content-center align-items-center">
-                    <div class="col">
-                        <h1>Portfolio</h1>
+                    <div class="col row d-flex justify-content-center align-items-center">
+                        <h1 style="margin: 50px 0px;">Portfolio</h1>
                         <div class="card-content">
                             <div class="row row-cols-1 row-cols-xxl-4 g-5">
                                 <div class="col">
@@ -206,9 +211,26 @@
             <hr>
             <section>
                 <div id="contacto" class="row d-flex justify-content-center align-items-center">
-                    <div class="col">
-                        <h1>Contacto</h1>
-                    </div>
+                    <form action="">
+                        <h1 style="padding: 50px 0px;">Contáctame!</h1>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre o nombre de la
+                                empresa:</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Ingrese su nombre...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput2"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                style="resize: none;" placeholder="Ingrese su mensaje..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
                 </div>
             </section>
         </div>
