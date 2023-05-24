@@ -25,20 +25,17 @@ window.addEventListener("scroll", function () {
 });
 
 const sendmail = document.getElementById("sendmail");
-
 sendmail.addEventListener('submit', (e) => {
     e.preventDefault();
 })
 
 //Esta funcionalidad hace dinamico la barra de navegación
-
 let farit = document.getElementById("itsme");
 let aboutme = document.getElementById("abtme");
 let habilidades = document.getElementById("skills");
 let educacion = document.getElementById("ed");
 let portfolio = document.getElementById("porfolio");
 let contacto = document.getElementById("contact");
-
 
 
 function esVisible(seccion) {
