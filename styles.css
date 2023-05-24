@@ -6,6 +6,7 @@
 
 nav {
     color: white;
+    width: 100%;
     background-color: #212A3E;
     position: fixed;
     top: 0px;
@@ -13,8 +14,8 @@ nav {
     z-index: 1;
 }
 
-.nav-active {
-    color: red;
+.active {
+    transform: scale(1.2);
 }
 
 .codelink {
@@ -53,6 +54,10 @@ nav li {
 ul a {
     color: #F1F6F9;
     text-decoration: none;
+}
+
+.hidden-control {
+    display: none;
 }
 
 .container-personalziado {
@@ -106,6 +111,7 @@ ul a {
 
 a:hover {
     color: #9BA4B5;
+    transform: scale(1.2);
 }
 
 .card-content {
@@ -128,11 +134,40 @@ a:hover {
     padding: 20px;
 }
 
+
 @media screen and (min-width: 768px) {
 
+    #me,
     #aboutme,
     #habilidades,
-    #educacion {
+    #educacion,
+    #contacto,
+    #portfolio {
         height: 100vh;
+    }
+
+    .hidden-control {
+        display: block;
+    }
+
+    /* nav {
+        background-color: #27374D; 
+    } */
+
+    .elementPos {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        padding-bottom: 0px;
+    }
+
+    .navbar.fixed-top-lg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 }
