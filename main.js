@@ -52,54 +52,17 @@ function esVisible(seccion) {
 }
 
 const li = document.querySelectorAll('a');
-
 function manejarScroll() {
+    //Itera en todos los elementos del nav e interactua con cada uno
+    const navitems = [farit, aboutme, habilidades, educacion, portfolio, contacto]
+    for (let i = 0; i < navitems.length; i++) {
+        if (esVisible(navitems[i])) {
+            li[i].classList.add('active')
 
-    //HACER MAS CORTO ESTE CODIGO
-
-    if (esVisible(farit)) {
-        li[0].classList.add('active')
-
-    } else {
-        li[0].classList.remove('active')
+        } else {
+            li[i].classList.remove('active')
+        }
     }
-
-    if (esVisible(aboutme)) {
-        li[1].classList.add('active')
-
-    } else {
-        li[1].classList.remove('active')
-    }
-
-    if (esVisible(habilidades)) {
-        li[2].classList.add('active')
-
-    } else {
-        li[2].classList.remove('active')
-    }
-
-    if (esVisible(educacion)) {
-        li[3].classList.add('active')
-    } else {
-        li[3].classList.remove('active')
-    }
-
-    if (esVisible(portfolio)) {
-        li[4].classList.add('active')
-
-    } else {
-        li[4].classList.remove('active')
-    }
-
-    if (esVisible(contacto)) {
-        li[5].classList.add('active')
-
-    } else {
-        li[5].classList.remove('active')
-    }
-
-
-
 }
 
 var posicionYAnterior = window.pageYOffset || document.documentElement.scrollTop;
